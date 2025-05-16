@@ -1,0 +1,42 @@
+.hardskils {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(auto-fit, 40px);
+    // .hardskils__title
+
+    &__title {
+        grid-column: 1 / -1;
+        align-self: center;
+        
+        border-bottom: 2px solid #000;
+        text-transform: uppercase;
+
+        margin-bottom: 40px;
+        
+    }
+
+    // .hardskils__text
+
+    &__text {
+        margin-bottom: 5px;
+
+        & progress {
+            width: 50%;
+            background-color: #f3f3f3;
+            height: 10px;
+            border-radius: 10px;
+
+            &::-webkit-progress-bar {
+                background-color: #f3f3f3;
+                height: 10px;
+                border-radius: 10px;
+            }
+
+            &::-webkit-progress-value {
+                background-color: #dbb883;
+                height: 20px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
